@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Gsw-OSX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Gsw-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PdbReaderTestMain.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>22393CBB1F0AF7F600F44F40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>22F1532D1ED0A36400610DF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>22F1536D1ED0FDAA00610DF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>22F1537E1ED0FF3000610DF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
