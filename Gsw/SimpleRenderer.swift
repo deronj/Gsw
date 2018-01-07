@@ -24,15 +24,15 @@ class SimpleRenderer: Renderer
     }
 
     // Uses a single render pass
-    private var _renderPass: ForwardOnScreenRenderPass?
+    var _renderPass: ForwardOnScreenRenderPass?
 
-    private var _objects : Array<Renderable>?
+    var _objects : Array<Renderable>?
     
-    private var _perObjectTransforms: PerObjectTransforms!
+    var _perObjectTransforms: PerObjectTransforms!
 
-    private var _redMaterial: Material!
-    private var _greenMaterial: Material!
-    private var _blueMaterial: Material!
+    var _redMaterial: Material!
+    var _greenMaterial: Material!
+    var _blueMaterial: Material!
     
     private var _lights: Lights?
     
@@ -54,7 +54,7 @@ class SimpleRenderer: Renderer
         _renderPass!.add(objects:_objects!)
     }
 
-    private func _initRenderPass(_ color0PixelFormat: MTLPixelFormat)
+    func _initRenderPass(_ color0PixelFormat: MTLPixelFormat)
     {
         // TODO: eventually give more of the passdesc config responsibility to RenderPass
         let passDesc = MTLRenderPassDescriptor()

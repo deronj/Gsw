@@ -28,6 +28,8 @@ class RendererFactory
         {
         case "Simple":
             return SimpleRenderer()
+        case "Sim1":
+            return SimRenderer1()
 
         default:
             fatalError("Unsupported renderer: \(rendererName ?? "Unknown Renderer")")

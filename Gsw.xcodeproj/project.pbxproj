@@ -90,6 +90,10 @@
 		225831A41ED4A4F60040B531 /* RendererFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258319E1ED4A4E30040B531 /* RendererFactory.swift */; };
 		2264E17C1F3A539A0056FE34 /* TRSTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2264E17B1F3A539A0056FE34 /* TRSTransform.swift */; };
 		2264E17D1F3A539A0056FE34 /* TRSTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2264E17B1F3A539A0056FE34 /* TRSTransform.swift */; };
+		227478391FFAA13600E18755 /* SimRenderer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227478381FFAA13600E18755 /* SimRenderer1.swift */; };
+		2274783B1FFBE90700E18755 /* SimTraceAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274783A1FFBE90700E18755 /* SimTraceAnimator.swift */; };
+		2274783E1FFBF08900E18755 /* SimTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274783D1FFBF08900E18755 /* SimTrace.swift */; };
+		227478401FFBFA3E00E18755 /* SimObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2274783F1FFBFA3E00E18755 /* SimObject.swift */; };
 		227645411F5722900067761E /* TexturableQuadObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276453F1F5722900067761E /* TexturableQuadObject.swift */; };
 		227645431F572F370067761E /* TexturableQuadObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276453F1F5722900067761E /* TexturableQuadObject.swift */; };
 		227A61CC1F1132DC00AA86BE /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A61CB1F1132DC00AA86BE /* ScaleAnimator.swift */; };
@@ -189,6 +193,10 @@
 		2258319D1ED4A4E30040B531 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Renderer.swift; path = Common/Renderer.swift; sourceTree = "<group>"; };
 		2258319E1ED4A4E30040B531 /* RendererFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RendererFactory.swift; path = Common/RendererFactory.swift; sourceTree = "<group>"; };
 		2264E17B1F3A539A0056FE34 /* TRSTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TRSTransform.swift; path = ../TRSTransform.swift; sourceTree = "<group>"; };
+		227478381FFAA13600E18755 /* SimRenderer1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimRenderer1.swift; sourceTree = "<group>"; };
+		2274783A1FFBE90700E18755 /* SimTraceAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimTraceAnimator.swift; sourceTree = "<group>"; };
+		2274783D1FFBF08900E18755 /* SimTrace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimTrace.swift; sourceTree = "<group>"; };
+		2274783F1FFBFA3E00E18755 /* SimObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimObject.swift; sourceTree = "<group>"; };
 		2276453F1F5722900067761E /* TexturableQuadObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TexturableQuadObject.swift; sourceTree = "<group>"; };
 		227A61CB1F1132DC00AA86BE /* ScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimator.swift; sourceTree = "<group>"; };
 		227A61CE1F129BCC00AA86BE /* BrownianAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrownianAnimator.swift; sourceTree = "<group>"; };
@@ -259,6 +267,17 @@
 				22393CBE1F0AF7F600F44F40 /* main.swift */,
 			);
 			path = PdbReaderTestMain;
+			sourceTree = "<group>";
+		};
+		2274783C1FFBF05E00E18755 /* Molecular Viz */ = {
+			isa = PBXGroup;
+			children = (
+				227478381FFAA13600E18755 /* SimRenderer1.swift */,
+				2274783A1FFBE90700E18755 /* SimTraceAnimator.swift */,
+				2274783D1FFBF08900E18755 /* SimTrace.swift */,
+				2274783F1FFBFA3E00E18755 /* SimObject.swift */,
+			);
+			name = "Molecular Viz";
 			sourceTree = "<group>";
 		};
 		227A61CA1F11327400AA86BE /* Animators */ = {
@@ -398,7 +417,7 @@
 			name = Shaders;
 			sourceTree = "<group>";
 		};
-		22A2BDD31F05657A006FB217 /* Molecule Visualization */ = {
+		22A2BDD31F05657A006FB217 /* PDB */ = {
 			isa = PBXGroup;
 			children = (
 				22A2BDD41F0565AD006FB217 /* PDBReader.swift */,
@@ -407,7 +426,7 @@
 				22494DDF1F06CAF90058859A /* MolelculeSpec.swift */,
 				22393CB41F0ACFCA00F44F40 /* PDBReaderTestMain.swift */,
 			);
-			name = "Molecule Visualization";
+			name = PDB;
 			sourceTree = "<group>";
 		};
 		22F153251ED0A36400610DF1 = {
@@ -480,7 +499,8 @@
 				229D09151EF9C55F0065A8FB /* Render Passes */,
 				229D09161EF9C5920065A8FB /* Renderable Objects */,
 				229D09171EF9C6280065A8FB /* Shader Manager */,
-				22A2BDD31F05657A006FB217 /* Molecule Visualization */,
+				2274783C1FFBF05E00E18755 /* Molecular Viz */,
+				22A2BDD31F05657A006FB217 /* PDB */,
 				229D091A1EF9C7030065A8FB /* Shaders */,
 				229D09181EF9C6560065A8FB /* Resources */,
 				229D09191EF9C6AC0065A8FB /* Utilities */,
@@ -722,6 +742,7 @@
 				22562BD01F0FED30002B6BD3 /* RotatingAnimator.swift in Sources */,
 				227A61CF1F129BCC00AA86BE /* BrownianAnimator.swift in Sources */,
 				2254A4071EF7406300E622D3 /* MDLMeshObject.swift in Sources */,
+				227478391FFAA13600E18755 /* SimRenderer1.swift in Sources */,
 				22CE29931F55E48B0002AC0A /* MonkeyHeadObject.swift in Sources */,
 				220B70411F1FE5980092D43C /* TextureLoader.swift in Sources */,
 				224086C11EFC8F5300AE0D1F /* Subrenderable.swift in Sources */,
@@ -733,9 +754,12 @@
 				221DA3A91EF8249B00568E1A /* ShaderOptions.swift in Sources */,
 				227A61CC1F1132DC00AA86BE /* ScaleAnimator.swift in Sources */,
 				22562BC11F0D8BDE002B6BD3 /* OffScreenRenderPass.swift in Sources */,
+				2274783E1FFBF08900E18755 /* SimTrace.swift in Sources */,
 				22494DC61F05BBA60058859A /* ConcreteCameraOSX.swift in Sources */,
+				227478401FFBFA3E00E18755 /* SimObject.swift in Sources */,
 				221DA3BE1EF879E400568E1A /* Renderable.swift in Sources */,
 				22CE297E1F51D9DB0002AC0A /* DirectionalLight.swift in Sources */,
+				2274783B1FFBE90700E18755 /* SimTraceAnimator.swift in Sources */,
 				22494DE71F06FB4C0058859A /* GlobalTransforms.swift in Sources */,
 				22F153C11ED1031B00610DF1 /* AppDelegateOSX.swift in Sources */,
 				22562BCD1F0FE8BF002B6BD3 /* Animator.swift in Sources */,
