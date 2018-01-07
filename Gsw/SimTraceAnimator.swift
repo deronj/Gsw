@@ -22,7 +22,7 @@ class SimTraceAnimator : Animator
     private var _maxNumSimFrames : Int
 
     // simFrameRate is the desired number of sim frames updated per second
-    public init (object: SimObject, simFrameRate : Float = 30.0, initialSimFrameIndex : Int = 0)
+    public init (object: SimObject, simFrameRate : Float = 120.0, initialSimFrameIndex : Int = 0)
     {
         _object = object
         _simFrameRate = simFrameRate

@@ -63,7 +63,11 @@ class SimpleRenderer: Renderer
         // Note: color attachment texture is set later
         let colorAttachment = MTLRenderPassColorAttachmentDescriptor()
         colorAttachment.loadAction = .clear
-        colorAttachment.clearColor = MTLClearColor(red: 0.5, green: 0.4, blue: 0.5, alpha: 1.0)
+        // For Gsw: colorAttachment.clearColor = MTLClearColor(red: 0.5, green: 0.4, blue: 0.5, alpha: 1.0)
+
+        // For SimRender1
+        colorAttachment.clearColor = MTLClearColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
+
         colorAttachment.storeAction = .store
         passDesc.colorAttachments[0] = colorAttachment
 

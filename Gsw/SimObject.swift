@@ -11,7 +11,7 @@ import Metal
 class SimObject : SphereObject
 {
     // TODO: calibrate
-    let _SIZE : Float = 0.1
+    let _SIZE : Float = 0.3
 
     var _simTrace : SimTrace
     var _particleIndex : Int

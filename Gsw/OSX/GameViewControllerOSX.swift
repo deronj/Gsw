@@ -47,7 +47,7 @@ class GameViewController: NSViewController, MTKViewDelegate
         
         // Setup the render target, choose values based on your app
         _view!.depthStencilPixelFormat = _renderer!.getDesiredDepthStencilPixelFormat()
-        
+
         do
         {
             _view!.device = try _renderer!.initialize(_view!.colorPixelFormat, _view!.depthStencilPixelFormat, _view!.sampleCount, camera:_camera);
